@@ -10,8 +10,9 @@
 
 }
 
-.container, .main-container{
-    margin: 0 220px 0 220px;
+.container,
+.main-container{
+    margin: 0 200px 0 220px;
     padding-top: 10px;
 }
 
@@ -28,7 +29,7 @@
     line-height: 53px;
 }
 
-.navbar a {
+.anchor a {
     margin-left: 25px;
     text-decoration: none;
     font-weight: 500;
@@ -36,6 +37,7 @@
     line-height: 26px;
     color: #424242;
 }
+
 /* heading section */
 .heading-title {
     display: flex;
@@ -53,7 +55,7 @@ h4 {
     text-align: center;
 }
 
-.info{
+.header-info {
     margin-top: 20px;
     margin-bottom: 30px;
     width: 700px;
@@ -79,45 +81,53 @@ h4 {
     margin-bottom: 30px;
     width: 1000px;
     height: 500px;
-    
+
 }
+
 /* main section */
 
 .main-features{
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 40px;
+    margin-bottom: 80px;
 }
 
-.main-feature-figures{
+.main-feature-figures {
     display: flex;
     align-items: center;
     gap: 50px;
     /* align-items: calc(50%); */
 }
-.figure{
+
+.figure {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
 }
-.figure img{
+
+.figure img {
     width: 230px;
 }
+
 /* info */
-.feature-info h3{
+.feature-info h3 {
     font-weight: 500;
     font-size: 45px;
     color: #727272;
 }
-.feature-info h3 .text-style{
+
+.feature-info h3 .text-style {
     color: #131313;
     font-weight: 600;
 }
-.feature-info h1{
+
+.feature-info h1 {
     font-weight: 700;
     font-size: 45px;
     color: #FF900E;
 }
-.feature-details{
+
+.feature-details,
+.feature-intro {
     margin-top: 30px;
     margin-bottom: 30px;
     width: 500px;
@@ -126,4 +136,244 @@ h4 {
     line-height: 26px;
     color: #727272;
 
+}
+
+/* more feature section */
+.features-part {
+    margin-bottom: 160px;
+    display: flex;
+
+}
+
+.feature-title {
+    border-left: 4px solid #FF900E;
+    padding-left: 15px;
+    width: 350px;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.feature-img img {
+    margin-left: 90px;
+    width: 100%;
+    height: 90%;
+    
+
+}
+
+.btn-logo {
+    width: 250px;
+    height: 180px;
+    background-color: #FF900E;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 50px;
+    color: white;
+    
+}
+.exp-btn{
+    font-weight: 500;
+    font-size: 30px;
+    color: white;
+}
+
+.feature-categories {
+    /* border: 2px solid olive; */
+    padding: 30px;
+    margin: 0 30px 10px 10px;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+}
+
+.feature-categories h5 {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.feature-categories-info {
+    margin-top: 10px;
+    width: 420px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #727272;
+}
+/* achivements */
+.achivement-facts{
+    font-weight: 600;
+    font-size: 40px;
+}
+
+.achivement-title{
+    margin-top: 20px;
+    width: 450px;
+    height: 52px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #727272;
+}
+.achivement-items{
+    margin-top: 90px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    display: flex;
+    
+    justify-content: space-between;
+}
+.item-1, .item-2, .item-3, .item-4{
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+    text-align: center;
+    justify-content: center;
+    width: 220px;
+    height: 200px;
+    padding-top: 40px;
+}
+
+.item-1 h2, p, .item-2 h2, p, .item-3 h2, p, .item-4 h2, p{
+    padding-top: 10px;
+}
+/* sponsors */
+.sponsor-container{
+    margin-top: 120px;
+    margin-bottom: 50px;
+}
+.sponsor-title{
+    font-weight: 600;
+    font-size: 40px;
+    text-align: center;
+}
+.sponsor-info{
+    margin: 20px 0 40px 280px;
+    /* margin-left: 280px; */
+    text-align: center;
+    width: 450px;
+    height: 52px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #727272;
+}
+.sponsor-site{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 80px;
+    
+}
+.sponsor-site img{
+    width: 150px;
+    height: 50px;
+}
+/* footer section */
+.footer-container{
+    margin: 90px 140px 120px 220px;
+}
+
+footer p{
+    padding: 30px;
+    text-align: center;
+    background-color: #FF900E1A;
+    border-radius: 6px;
+}
+
+@media  screen and (max-width: 667px) {
+    .container, .main-container{
+        margin: 0;
+        padding: 0;
+    }
+    .header-container{
+        width: 100%;
+    }
+
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .anchor{
+        display: flex;
+        flex-direction: column;
+        
+        }
+    .heading-title{
+        width: 100%;
+        padding: 0 5px 0 5px;
+    }    
+    .header-info {
+        width: 100%; 
+    }    
+    .banner-img img{
+        width: 100%;
+        height: 100%;
+    }
+    /* main part */
+    .main-feature-figures{
+        display: flex;
+        flex-direction: column;
+    }
+    .figure{
+        display: flex;
+        flex-direction: column;
+    }
+    .figure img{
+        width: 100%;
+    }
+    .feature-info, .feature-details{
+        width: 100%;
+        padding: 5px;
+        text-align: center;
+    }
+    /* feature-items */
+    .features-part{
+        display: flex;
+        flex-direction: column;
+    }
+    .feature-intro, .feature-title{
+        width: 100%;
+        text-align: center;
+    }
+    .feature-categories, .feature-categories-info{
+        width: 100%;
+        margin-left: 0;
+    }
+    .feature-img img{
+        width: 100%;
+        margin-left: 0;
+    }
+    .btn-logo{
+        margin: 5px 0 0 80px;
+    }
+    /* achivenment part */
+    .achivenment, .achivement-title{
+        width: 100%;
+        text-align: center;
+    }
+    .achivement-items{
+        margin-left: 0;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+
+    }
+    /* sponsor part */
+    
+    .sponsor-info{
+        margin-left: 0;
+        width: 100%;
+    }
+    .sponsor-site{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    /* footer part */
+    .footer-container{
+        margin: 0;
+        margin-bottom: 20px;
+
+    }
 }
