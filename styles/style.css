@@ -162,7 +162,7 @@ h4 {
 }
 
 .btn-logo {
-    top: 2400px;
+    top: 2350px;
     position: absolute;
     width: 250px;
     height: 170px;
@@ -354,7 +354,8 @@ footer p{
     .btn-logo{
         position: relative;
         top: 40px;
-        left: 60px;
+        left: 20%;
+        
         
         /* margin: 5px 0 0 80px; */
     }
