@@ -56,9 +56,7 @@ function validateForm() {
 
   return isValid;
 }
-// if (fucn == true) {
-//   window.location.href = "/index.html";
-// }
+
 function displayError(fieldId, message) {
   const field = document.getElementById(fieldId);
   const error = document.createElement("p");
@@ -82,7 +80,8 @@ function contactUs() {
 }
 
 // conatct form
-function validateContactForm() {
+function validateContactForm(e) {
+  e.preventDefault(); //prevent reload page
   let isValid = true;
   const name = document.getElementById("contact-name").value;
   const email = document.getElementById("contact-email").value;
