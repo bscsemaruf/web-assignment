@@ -128,9 +128,6 @@ function validateContactForm() {
   if (notes.trim() === "") {
     displayContactError("contact-age", "Notes is required.");
     isValid = false;
-  } else if (parseInt(notes) <= 0) {
-    displayContactError("contact-age", "Age must be a positive number.");
-    isValid = false;
   }
 
   // Validate country
