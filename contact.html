@@ -6,41 +6,8 @@
     <title>Login</title>
     <link rel="stylesheet" href="styles/style.css" />
   </head>
-  <body class="main-container">
-    <section class="contact-container">
-      <h1 class="contact">Contact Us</h1>
-      <p style="margin-bottom: 30px">
-        Get in touch with our team to learn more.
-      </p>
-
-      <div>
-        <form onsubmit=" validateConatctForm()">
-          <label for="name">Name:</label>
-          <input type="text" id="contact-name" name="name" />
-          <br />
-          <label for="email">Email:</label>
-          <input type="email" id="contact-email" name="email" />
-          <br />
-          <label for="phone">Phone Number:</label>
-          <input type="tel" id="contact-phone" name="phone" />
-          <br />
-          <label for="text">Notes:</label>
-          <input type="text" id="contact-notes" name="notes" />
-          <br />
-          <label for="country">Country:</label>
-          <select id="contact-country" name="country">
-            <option value="">Select</option>
-            <option value="usa">USA</option>
-            <option value="canada">Canada</option>
-            <option value="uk">UK</option>
-            <option value="australia">Australia</option>
-          </select>
-
-          <input type="submit" value="Submit" />
-        </form>
-      </div>
-    </section>
-    <section style="background-color: antiquewhite">
+  <body>
+    <section style="background-color: antiquewhite; width: full">
       <h1 style="text-align: center; font-size: xx-large; padding: 90px">
         Our Architects Story
       </h1>
@@ -50,7 +17,14 @@
         <img style="width: 200px" src="/images/03.jpg" alt="" />
       </div>
       <div class="architect">
-        <p style="width: 800px; text-align: center; padding-bottom: 40px">
+        <p
+          style="
+            width: 1000px;
+            text-align: center;
+            padding-bottom: 80px;
+            line-height: 24px;
+          "
+        >
           Mosh is a skilled architect known for his innovative designs and
           attention to detail. With a passion for creating functional and
           aesthetically pleasing spaces, Mosh has a deep understanding of modern
@@ -63,7 +37,38 @@
         </p>
       </div>
     </section>
-    <section class="sponsor-container">
+    <section class="contact-container">
+      <h1 class="contact">Contact With Us</h1>
+      <p style="margin-bottom: 30px">
+        Get in touch with our team to learn more.
+      </p>
+
+      <form onsubmit="return validateContactForm()">
+        <label for="name">Name:</label>
+        <input type="text" id="contact-name" name="name" />
+        <br />
+        <label for="email">Email:</label>
+        <input type="email" id="contact-email" name="email" />
+        <br />
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="contact-phone" name="phone" />
+        <br />
+        <label for="text">Notes:</label>
+        <input type="text" id="contact-notes" name="notes" />
+        <br />
+        <label for="country">Country:</label>
+        <select id="contact-country" name="country">
+          <option value="">Select</option>
+          <option value="usa">USA</option>
+          <option value="canada">Canada</option>
+          <option value="uk">UK</option>
+          <option value="australia">Australia</option>
+        </select>
+
+        <input type="submit" value="Submit" />
+      </form>
+    </section>
+    <section class="sponsor-container main-container">
       <div class="sponsor">
         <h2 class="sponsor-title">Our Sponspors</h2>
         <p class="sponsor-info">

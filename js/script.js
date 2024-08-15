@@ -82,8 +82,8 @@ function contactUs() {
 }
 
 // conatct form
-function validateConatctForm() {
-  // let isValid = true;
+function validateContactForm() {
+  let isValid = true;
   const name = document.getElementById("contact-name").value;
   const email = document.getElementById("contact-email").value;
   const phone = document.getElementById("contact-phone").value;
@@ -97,49 +97,49 @@ function validateConatctForm() {
   // Validate name
   if (name.trim() === "") {
     displayContactError("contact-name", "Name is required.");
-    // isValid = false;
+    isValid = false;
   } else if (!/^[a-zA-Z\s]+$/.test(name)) {
     displayContactError(
       "contact-name",
       "Name must contain only letters and spaces."
     );
-    // isValid = false;
+    isValid = false;
   }
 
   // Validate email
   if (email.trim() === "") {
     displayContactError("contact-email", "Email is required.");
-    // isValid = false;
+    isValid = false;
   } else if (!/\S+@\S+\.\S+/.test(email)) {
     displayContactError("contact-email", "Email format is invalid.");
-    // isValid = false;
+    isValid = false;
   }
 
   // Validate phone
   if (phone.trim() === "") {
     displayContactError("contact-phone", "Phone number is required.");
-    // isValid = false;
+    isValid = false;
   } else if (!/^\d{10}$/.test(phone)) {
     displayContactError("contact-phone", "Phone number must be 10 digits.");
-    // isValid = false;
+    isValid = false;
   }
 
   // Validate age
   if (notes.trim() === "") {
     displayContactError("contact-age", "Notes is required.");
-    // isValid = false;
+    isValid = false;
   } else if (parseInt(notes) <= 0) {
     displayContactError("contact-age", "Age must be a positive number.");
-    // isValid = false;
+    isValid = false;
   }
 
   // Validate country
   if (country === "") {
     displayContactError("contact-country", "Please select a country.");
-    // isValid = false;
+    isValid = false;
   }
 
-  // return isValid;
+  return isValid;
 }
 
 function displayContactError(fieldId, message) {
