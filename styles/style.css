@@ -4,6 +4,8 @@
   box-sizing: border-box;
 }
 
+/* Header-Container Section */
+
 .header-container {
   width: 1430px;
   background-color: #ff900e1a;
@@ -38,6 +40,7 @@
 }
 
 /* heading section */
+
 .heading-title {
   display: flex;
   flex-direction: column;
@@ -53,17 +56,6 @@ h4 {
   text-align: center;
 }
 
-.header-info {
-  margin-top: 20px;
-  margin-bottom: 30px;
-  width: 700px;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 26px;
-  color: #727272;
-  text-align: center;
-}
-
 .btn button {
   padding: 10px;
   font-weight: 600;
@@ -72,13 +64,7 @@ h4 {
   color: white;
   border: none;
   border-radius: 6px;
-}
-
-.banner-img img {
-  margin-top: 30px;
-  margin-bottom: 30px;
-  width: 1000px;
-  height: 500px;
+  cursor: pointer;
 }
 
 /* main section */
@@ -106,6 +92,7 @@ h4 {
 }
 
 /* info */
+
 .feature-info h3 {
   font-weight: 500;
   font-size: 45px;
@@ -135,6 +122,7 @@ h4 {
 }
 
 /* more feature section */
+
 .features-part {
   margin-bottom: 160px;
   display: flex;
@@ -155,30 +143,13 @@ h4 {
   height: 90%;
 }
 
-.btn-logo {
-  top: 2350px;
-  position: absolute;
-  width: 250px;
-  height: 170px;
-  background-color: #ff900e;
-  border: none;
-  border-radius: 5px;
-  font-weight: 700;
-  font-size: 45px;
-  color: white;
-}
-.exp-btn {
-  font-weight: 500;
-  font-size: 20px;
-  color: white;
-}
-
 .feature-categories {
   /* border: 2px solid olive; */
   padding: 30px;
   margin: 0 30px 10px 10px;
   box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
   border-radius: 8px;
+  cursor: pointer;
 }
 
 .feature-categories h5 {
@@ -194,53 +165,7 @@ h4 {
   line-height: 26px;
   color: #727272;
 }
-/* achivements */
-.achivement-facts {
-  font-weight: 600;
-  font-size: 40px;
-}
 
-.achivement-title {
-  margin-top: 20px;
-  width: 450px;
-  height: 52px;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 26px;
-  color: #727272;
-}
-.achivement-items {
-  margin-top: 90px;
-  margin-bottom: 30px;
-  margin-left: 30px;
-  display: flex;
-
-  justify-content: space-between;
-}
-.item-1,
-.item-2,
-.item-3,
-.item-4 {
-  border: 5px solid white;
-  border-radius: 8px;
-  text-align: center;
-  justify-content: center;
-  width: 220px;
-  height: 200px;
-  padding-top: 40px;
-  box-shadow: 10px 5px 5px blanchedalmond;
-}
-
-.item-1 h2,
-p,
-.item-2 h2,
-p,
-.item-3 h2,
-p,
-.item-4 h2,
-p {
-  padding-top: 10px;
-}
 /* sponsors */
 .sponsor-container {
   margin-top: 120px;
@@ -370,21 +295,6 @@ footer p {
 
     /* margin: 5px 0 0 80px; */
   }
-  /* achivenment part */
-
-  .achivenment,
-  .achivement-title {
-    margin-top: 40px;
-    width: 100%;
-    text-align: center;
-  }
-  .achivement-items {
-    margin-left: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
   /* sponsor part */
 
   .sponsor-info {
@@ -397,9 +307,126 @@ footer p {
     align-items: center;
     gap: 20px;
   }
-  /* footer part */
-  .footer-container {
-    margin: 0;
-    margin-bottom: 20px;
-  }
+}
+/* Form Part */
+.login-container {
+  height: 100vh;
+  background-color: #ff900e1a;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+}
+.login,
+.contact {
+  margin-bottom: 10px;
+  font-weight: 800;
+  font-size: xx-large;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+}
+
+form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 600px;
+
+  margin: 0 auto;
+}
+
+label {
+  font-weight: bold;
+  width: full;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.error {
+  color: red;
+  font-size: 0.9em;
+  margin-top: -10px;
+}
+
+/* footer part */
+.footer-container {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+/* about section */
+
+#about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.desktop-services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin: 40px 0;
+  cursor: pointer;
+}
+/* architect */
+.architect {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.architect-people {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.architect-people img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.contact-container {
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+}
+.contact {
+  margin-top: 40px;
 }
